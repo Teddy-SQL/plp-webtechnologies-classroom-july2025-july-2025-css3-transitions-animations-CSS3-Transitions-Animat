@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Animations & JS Scope Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="logo">Animate & Script Demo</h1>
+    <p class="tagline">Transitions, keyframes, and JavaScript (scope, params, return values)</p>
+  </header>
+
+  <main class="container">
+    <!-- Animated hero box (CSS keyframes & transition demo) -->
+    <section class="hero">
+      <div id="heroBox" class="box">I slide in on load</div>
+      <button id="pulseBtn" class="btn">Trigger Pulse Animation</button>
+      <button id="slideBtn" class="btn">Trigger Slide From Left</button>
+    </section>
+
+    <!-- Cards demonstrating transitions -->
+    <section class="cards">
+      <article class="card" id="cardA">
+        <h2>Card A</h2>
+        <p>Hover to see smooth transform & shadow transition.</p>
+      </article>
+      <article class="card" id="cardB">
+        <h2>Card B</h2>
+        <p>Click the button below to animate this card via JS.</p>
+        <button id="shakeBtn" class="btn small">Shake Card B</button>
+      </article>
+    </section>
+
+    <!-- Interactive form area to demonstrate scope & return values -->
+    <section class="form-section">
+      <h2>Simple Form (custom JS validation)</h2>
+      <form id="demoForm" novalidate>
+        <label for="username">Name</label>
+        <input id="username" name="username" type="text" placeholder="Your name" />
+
+        <label for="age">Age</label>
+        <input id="age" name="age" type="number" min="1" placeholder="Your age" />
+
+        <button type="submit" class="btn">Submit</button>
+        <p id="formMsg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025
